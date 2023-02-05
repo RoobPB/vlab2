@@ -1,8 +1,10 @@
 <script setup>
+import BildImage from '../components/BildImage.vue'
 </script>
 
 <template>
-  <main>
-
-  </main>
+<BildImage/>
 </template>
+
+<style>
+</style>
