@@ -1,12 +1,13 @@
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
+/* Import bootstrap css and js that bootstrap uses*/
 import 'bootstrap/dist/css/bootstrap.css'
 import bootstrap from 'bootstrap/dist/js/bootstrap.bundle.js'
 
 import App from './App.vue'
 import router from './router'
 
-import './assets/main.css'
+import './assets/base.css'
 
 const app = createApp(App)
 

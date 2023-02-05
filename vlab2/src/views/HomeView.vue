@@ -1,10 +1,7 @@
 <script setup>
-import BildImage from '../components/BildImage.vue'
+import HeroImage from '../components/HeroImage.vue'
 </script>
 
 <template>
-<BildImage/>
+<HeroImage/>
 </template>
-
-<style>
-</style>
