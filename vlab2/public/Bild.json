@@ -1,0 +1,33 @@
+[
+    {
+        "id":"1",
+        "name":"Bild1",
+        "category":"Summer",
+        "Description": "Fin sommarbild"
+    },
+    {
+        "id":"2",
+        "name":"Bild2",
+        "category":"Autumn",
+        "Description": "Fin Höstbild"
+
+    },
+    {
+        "id":"3",
+        "name":"Bild3",
+        "category":"Vinter",
+        "Description": "Fin vinterbild"
+
+    },
+    {
+        "id":"4",
+        "name":"Bild4",
+        "category":"Spring",
+        "Description": "Fin Vårbild"
+
+    }
+
+
+
+
+]
