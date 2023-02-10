@@ -3,27 +3,31 @@
         "id":"1",
         "name":"Bild1",
         "category":"Summer",
-        "Description": "Fin sommarbild"
+        "description": "Fin sommarbild",
+        "image": "/src/assets/img/annie-spratt-pKpipZVVEC0-unsplash.jpg"
     },
     {
         "id":"2",
         "name":"Bild2",
         "category":"Autumn",
-        "Description": "Fin Höstbild"
+        "description": "Fin Höstbild",
+        "image": "/src/assets/img/andy-holmes-LUpDjlJv4_c-unsplash.jpg"
 
     },
     {
         "id":"3",
         "name":"Bild3",
         "category":"Vinter",
-        "Description": "Fin vinterbild"
+        "description": "Fin vinterbild",
+        "image": "/src/assets/img/annie-spratt-wuc-KEIBrdE-unsplash.jpg"
 
     },
     {
         "id":"4",
         "name":"Bild4",
         "category":"Spring",
-        "Description": "Fin Vårbild"
+        "description": "Fin Vårbild",
+        "image": "/src/assets/img/joao-marcelo-martins-pDC7vQrW-EM-unsplash.jpg"
 
     }
 

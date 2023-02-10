@@ -7,40 +7,57 @@
 <template>
     <BildImage />
     <SearchBar />
-    <h1 class="title">{{ message }}</h1>
+    <h1 class="title">{{ msg }}</h1>
     <div id="sortering">
-    <div class="container text-center">
-        <div class="row align-items-center">
-            <BildDs />
-            <BildDs />
-            <BildDs />
-            <BildDs />
+        <div class="container text-center">
+            <div class="row align-items-center">
+
+
+
+                <!-- Loopar bild i bilder och lagt till ett key som kommer binda den första bilen med id i json -->
+                <!-- offer här binds till spa  Bör byta namn här :) -->
+                <bild-ds v-for="spa in spas" :key="spa.id" :offer="spa" />
+            </div>
         </div>
     </div>
-</div>
 </template>
 
 <script>
     export default {
         data() {
             return {
-                message: 'Kategori'
+                msg: 'Kategori',
+                spas: [],
+                bildInfo: 'bild.json'
+            }
+        },
+        components: { 'bild-ds': BildDs },
+
+        mounted() {
+            this.getBild()
+        },
+        methods: {
+            async getBild() {
+                const response = await fetch(this.bildInfo)
+                const data = await response.json()
+                this.spas = data
+                console.log(data)
             }
         }
     }
 </script>
 
 <style scoped>
-    #sortering{
-        display:flex;
+    #sortering {
+        display: flex;
         justify-content: center;
         margin-top: 10vh;
         margin-bottom: 10vh;
-
     }
 
-
-    .title, h1 {
+.title,
+    h1 {
+        position: relative;
         color: aliceblue;
         display: flex;
         justify-content: center;

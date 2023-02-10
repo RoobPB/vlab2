@@ -1,31 +1,42 @@
 <script>
 
 
-import { ref } from 'vue'
+
 
 export default {
-    setup() {
-        const userName =  ref('')
-
-        const submitForm = () => {
-            console.log(userName.value)
-        }
+    data() {
         return {
-            userName,
-            submitForm
-        }
+        s: [],
+        bildInfo: 'bild.json',
+        search: ''
     }
+},
+methods: {
+    n(){
+        return this.s
+    }
+},
+
+
 }
+
+
 
 </script>
 
 <template>
 
 <div class="SearchApp">
+  <input btntext class="form-control me-2" type="search" placeholder="Search" v-model="search">
+  <button @click="getBild" class="btn btn-outline-success" type="submit">Search</button>
+</div>
+<!--<h2>{{ msg || 'No props passed yet' }}</h2> -->
 
-      <input class="form-control me-2" type="search" placeholder="Search" v-model="userName">
-      <button @click="submitForm" class="btn btn-outline-success" type="submit">Search </button>
-    </div>
+
+
+
+
+
 
 
 </template>
@@ -43,5 +54,7 @@ export default {
     top: 90px;
     }
 
-
+    h2 {
+        color: white;
+}
 </style>
