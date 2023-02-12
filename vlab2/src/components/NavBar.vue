@@ -2,18 +2,32 @@
     import { RouterLink, RouterView } from 'vue-router'
 </script>
 <template>
+
    <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
+    
     <RouterLink class="navbar-brand" to="/">Home</RouterLink>
     <RouterLink class="nav-link active" aria-current="page" to="/about">About</RouterLink>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-
     </div>
   </div>
+
 </nav>
     <RouterView />
 </template>
+
+<script>
+export default {
+
+data() {
+    return {
+        msg: 'Sök på en årstid eller klicka på knappen'
+
+    }
+}
+}
+
+</script>
 <style scoped>
 
     .navbar-brand {
@@ -45,5 +59,7 @@
     .nav-link:hover{
         color: rgb(97, 97, 105);
     }
+
+
 
 </style>

@@ -15,18 +15,15 @@ export default {
     }
 
 
-
-
-
 </script>
 <template>
-    <SearchBar :search='greeting'/>
+  <!--  <SearchBar :search='greeting'/> -- Ta bort denna   -->
     <div id="bild">
         <img
             src="../assets/img/andy-holmes-LUpDjlJv4_c-unsplash.jpg"
             class="img-fluid"
             alt="bild :D"
-        /> 
+        />
         <div class="MainSearch">
 
 

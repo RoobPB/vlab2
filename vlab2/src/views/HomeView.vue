@@ -2,21 +2,28 @@
     import BildImage from '../components/BildImage.vue'
     import SearchBar from '../components/SearchBar.vue'
     import BildDs from '../components/BildDs.vue'
+    import axios from 'axios'
 </script>
 
 <template>
+    <div class="message">
+    <h1>{{ msg }}</h1></div>
     <BildImage />
     <SearchBar />
-    <h1 class="title">{{ msg }}</h1>
+
+
+
+
+
+
     <div id="sortering">
         <div class="container text-center">
+            <SearchBar :show-search="showSearch" @toggleVisibility="toggleVisibility" /> <!-- togglevis är ny funkar ej -->
+            <button class="btn btn-warning" @click="showSearch = !showSearch">Show searchbar</button> <!-- Detta är toggle knappen -->
             <div class="row align-items-center">
-
-
-
                 <!-- Loopar bild i bilder och lagt till ett key som kommer binda den första bilen med id i json -->
                 <!-- offer här binds till spa  Bör byta namn här :) -->
-                <bild-ds v-for="spa in spas" :key="spa.id" :offer="spa" />
+                <BildDs v-for="spa in spas" :key="spa.id" :offer="spa" /> <!-- Ändra namn -->
             </div>
         </div>
     </div>
@@ -24,43 +31,42 @@
 
 <script>
     export default {
+
         data() {
             return {
-                msg: 'Kategori',
-                spas: [],
-                bildInfo: 'bild.json'
-            }
-        },
-        components: { 'bild-ds': BildDs },
 
-        mounted() {
-            this.getBild()
+                showSearch: false,
+                showSearchBar: false
+
+            }
         },
         methods: {
-            async getBild() {
-                const response = await fetch(this.bildInfo)
-                const data = await response.json()
-                this.spas = data
-                console.log(data)
+            toggleVisibility() {
+                this.showSearch = !this.showSearch // Ny
             }
         }
+
+
+
     }
 </script>
 
 <style scoped>
-    #sortering {
-        display: flex;
-        justify-content: center;
-        margin-top: 10vh;
-        margin-bottom: 10vh;
-    }
 
-.title,
-    h1 {
-        position: relative;
-        color: aliceblue;
-        display: flex;
+
+
+
+.btn-warning{
+    color: black;
+    font-weight:bold;
+
+    display: flex;
         justify-content: center;
-        margin-top: 2vh;
-    }
+        left: 1%;
+        top: -120px;
+
+
+}
+
+
 </style>
