@@ -6,24 +6,26 @@
 </script>
 
 <template>
-    <div class="message">
-    <h1>{{ msg }}</h1></div>
     <BildImage />
     <SearchBar />
 
-
-
-
-
-
     <div id="sortering">
         <div class="container text-center">
-            <SearchBar :show-search="showSearch" @toggleVisibility="toggleVisibility" /> <!-- togglevis är ny funkar ej -->
-            <button class="btn btn-warning" @click="showSearch = !showSearch">Show searchbar</button> <!-- Detta är toggle knappen -->
+            <SearchBar :show-search="showSearch" />
+            <!-- togglevis är ny funkar ej -->
+            <button
+                class="btn btn-warning"
+                v-if="!showSearch"
+                @click="showSearch = !showSearch"
+            >
+                Show searchbar
+            </button>
+            <!-- Detta är toggle knappen med v-if här kommer knappne att försvinna när man klickar på den -->
             <div class="row align-items-center">
                 <!-- Loopar bild i bilder och lagt till ett key som kommer binda den första bilen med id i json -->
                 <!-- offer här binds till spa  Bör byta namn här :) -->
-                <BildDs v-for="spa in spas" :key="spa.id" :offer="spa" /> <!-- Ändra namn -->
+                <BildDs v-for="spa in spas" :key="spa.id" :offer="spa" />
+                <!-- Ändra namn -->
             </div>
         </div>
     </div>
@@ -31,13 +33,13 @@
 
 <script>
     export default {
+        components: {
+            SearchBar
+        },
 
         data() {
             return {
-
-                showSearch: false,
-                showSearchBar: false
-
+                showSearch: false
             }
         },
         methods: {
@@ -45,28 +47,17 @@
                 this.showSearch = !this.showSearch // Ny
             }
         }
-
-
-
     }
 </script>
 
 <style scoped>
+    .btn-warning {
+        color: black;
+        font-weight: bold;
 
-
-
-
-.btn-warning{
-    color: black;
-    font-weight:bold;
-
-    display: flex;
+        display: flex;
         justify-content: center;
         left: 1%;
         top: -120px;
-
-
-}
-
-
+    }
 </style>

@@ -1,44 +1,143 @@
 [
     {
         "id":"1",
-        "name":"Bild1",
-        "category":"Summer",
-        "description": "Fin sommarbild",
-        "image": "/src/assets/img/annie-spratt-pKpipZVVEC0-unsplash.jpg"
+        "name":"Summer 1",
+        "category":"Summer, Sommar",
+        "description": "On the way to the beach",
+        "image": "https://images.unsplash.com/photo-1534570122623-99e8378a9aa7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
     },
     {
         "id":"2",
-        "name":"Bild2",
-        "category":"Autumn",
-        "description": "Fin Höstbild",
-        "image": "/src/assets/img/andy-holmes-LUpDjlJv4_c-unsplash.jpg"
+        "name":"Autumn 1",
+        "category":"Autumn, Höst",
+        "description": "Autumn in the mountains",
+        "image": "https://images.unsplash.com/photo-1508264165352-258db2ebd59b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80"
 
     },
     {
         "id":"3",
-        "name":"Bild3",
-        "category":"Vinter",
-        "description": "Fin vinterbild",
-        "image": "/src/assets/img/annie-spratt-wuc-KEIBrdE-unsplash.jpg"
+        "name":"Winter 1",
+        "category":"Winter, Vinter",
+        "description": "A cold place",
+        "image": "https://images.unsplash.com/photo-1610380247511-e100e92edba7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1225&q=80"
 
     },
     {
         "id":"4",
-        "name":"Bild4",
-        "category":"Spring",
-        "description": "Fin Vårbild",
-        "image": "/src/assets/img/joao-marcelo-martins-pDC7vQrW-EM-unsplash.jpg"
+        "name":"Spring 1",
+        "category":"Spring, Vår",
+        "description": "Spring and a river",
+        "image": "https://images.unsplash.com/photo-1597205820234-31fd66836ca2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80"
+
+    },
+    {
+        "id":"5",
+        "name":"Summer 2",
+        "category":"Summer, Sommar",
+        "description": "Palm trees at sunset",
+        "image": "https://images.unsplash.com/photo-1553649084-3e42773ff0e3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+
+
+    },
+    {
+        "id":"6",
+        "name":"Autumn 2",
+        "category":"Autumn, Höst",
+        "description": "Autumn in the forest",
+        "image": "https://images.unsplash.com/photo-1504788363733-507549153474?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1167&q=80"
 
     }
     ,
     {
-        "id":"5",
-        "name":"Bild5",
-        "category":"Spring",
-        "description": "Fin Vårbild",
-        "image": "/src/assets/img/joao-marcelo-martins-pDC7vQrW-EM-unsplash.jpg"
+        "id":"7",
+        "name":"Winter 2",
+        "category":"Winter, Vinter",
+        "description": "A boat stuck in the ice",
+        "image": "https://images.unsplash.com/photo-1613568656911-785b3840a304?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
 
     }
+    ,
+    {
+        "id":"8",
+        "name":"Spring 2",
+        "category":"Spring, Vår",
+        "description": "Cherry flowers in the park",
+        "image": "https://images.unsplash.com/photo-1430133667822-e582b3280b24?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=685&q=80"
+
+    }
+    ,
+    {
+        "id":"9",
+        "name":"Summer 3",
+        "category":"Summer, Sommar",
+        "description": "Tree and a bike - Öland, Sweden",
+        "image": "https://images.unsplash.com/photo-1521369378821-4656d1906a9d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=744&q=80"
+
+    }
+    ,
+    {
+        "id":"10",
+        "name":"Autumn 3",
+        "category":"Autumn, Höst",
+        "description": "A beautiful lake",
+        "image": "https://images.unsplash.com/photo-1445561696415-deadc6a2adaa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
+
+    }
+    ,
+    {
+        "id":"11",
+        "name":"Winter 3",
+        "category":"Winter, Vinter",
+        "description": "Christmas time in Canada",
+        "image": "https://images.unsplash.com/photo-1529973625058-a665431328fb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+
+    }
+    ,
+    {
+        "id":"12",
+        "name":"Spring 3",
+        "category":"Spring, Vår",
+        "description": "Yellow flowers in bloom",
+        "image": "https://images.unsplash.com/photo-1523881207092-309223e59226?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+
+    }
+    ,
+    {
+        "id":"13",
+        "name":"Summer 4",
+        "category":"Summer, Sommar",
+        "description": "Sailing on a sunny day",
+        "image": "https://images.unsplash.com/photo-1619764847479-8dc6b70c1148?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+
+    }
+    ,
+    {
+        "id":"14",
+        "name":"Autumn 4",
+        "category":"Autumn, Höst",
+        "description": "Autumn in the park",
+        "image": "https://images.unsplash.com/photo-1509224863479-ab583ee78692?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
+
+    }
+    ,
+    {
+        "id":"15",
+        "name":"Winter 4",
+        "category":"Winter, Vinter",
+        "description": "A house surrounded by snow ",
+        "image": "https://images.unsplash.com/photo-1486944670663-e0a2ea5018eb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+
+    }
+    ,
+    {
+        "id":"16",
+        "name":"Spring 4",
+        "category":"Spring, Vår",
+        "description": "Ice melting in Stockholm",
+        "image": "https://images.unsplash.com/photo-1552729434-cd6c86ce3378?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+
+    }
+
 
 
 

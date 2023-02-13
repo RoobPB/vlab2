@@ -9,7 +9,7 @@ export default {
             type: Boolean, // Ändra namn
             default: false // Ändra namn
         }
-        
+
     },
 
   data() {
@@ -18,7 +18,7 @@ export default {
       searchTerm: '',
       filteredData: [],
       filteredList: [],
-      msg: 'Sök på en årstid eller klicka på knappen',
+      msg: 'Sök på en årstid eller klicka på knappen', // Det är denna som skriver ut texten
     }
   },
   methods: {
@@ -37,15 +37,17 @@ export default {
 <div class="SearchApp" v-if="showSearch">
   <input btntext class="form-control me-2" type="search" placeholder="Search" v-model="searchTerm">
   <button @click="search" class="btn btn-outline-success" type="submit">Search</button>
-  <h1>{{ msg }}</h1>
+  <p>{{ msg }}</p> <!-- Det är denna som skriver ut texten -->
 </div>
+
 
 <div class="card-container">
     <div class="card" v-for="item in filteredData" :key="item.id">
         <img :src="item.image" alt="Bild bild"> <!-- Har försökt få bilden att visas när man går in på sidan (när bilden är en empty
         string kommer alla bilder visas annars inte) -->
         <h2>{{ item.name }}</h2>
-        <p>{{ item.category }}</p>
+        <p>{{ item.description }}</p>
+
 
     </div>
 
@@ -69,17 +71,18 @@ export default {
     left: 40%;
     top: 90px;
     }
-.SearchApp h1{
+.SearchApp p{
     color: white;
     font-weight:bold;
+    font-size:large;
     display: flex;
-        justify-content: center;
-        left: 15%;
-        top: -120px;
+    justify-content: center;
+
+
 }
 
 h2 {
-    color: red; /* Färgen på bildnamn */
+    color: rgb(31, 136, 5); /* Färgen på bildnamn */
 }
 .btn{
 position: relative;
@@ -101,32 +104,25 @@ top: -80%;
 .card-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 20px;
+  grid-gap: 40px;
   justify-content: center;
 }
 
 .card {
   width: 300px;
   height: 400px;
-  margin: 20px 0;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-basis: 150%;
-
+  overflow: hidden;
 }
 
 .card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
+    width: 100%;
+    height: 68%;
+    object-fit: cover;
 }
 .btn-outline-success {
   display: flex;
 
-
-
 }
+
 
 </style>

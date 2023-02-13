@@ -5,7 +5,7 @@
 
    <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    
+
     <RouterLink class="navbar-brand" to="/">Home</RouterLink>
     <RouterLink class="nav-link active" aria-current="page" to="/about">About</RouterLink>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
