@@ -5,19 +5,18 @@ import SearchBar from './SearchBar.vue';
 export default {
     components: {
         SearchBar
-    },
+    }/*,
     data(){
         return {
-            greeting: '',
+            greeting: '', /* Oanvänd kod */
 
         }
-    }
-    }
+
+    /*  */
 
 
 </script>
 <template>
-  <!--  <SearchBar :search='greeting'/> -- Ta bort denna   -->
     <div id="bild">
         <img
             src="../assets/img/andy-holmes-LUpDjlJv4_c-unsplash.jpg"

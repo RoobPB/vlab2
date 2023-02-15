@@ -21,7 +21,7 @@ export default {
 
 data() {
     return {
-        msg: 'Sök på en årstid eller klicka på knappen'
+        
 
     }
 }

@@ -12,7 +12,6 @@
     <div id="sortering">
         <div class="container text-center">
             <SearchBar :show-search="showSearch" />
-            <!-- togglevis är ny funkar ej -->
             <button
                 class="btn btn-warning"
                 v-if="!showSearch"
@@ -20,13 +19,9 @@
             >
                 Show searchbar
             </button>
-            <!-- Detta är toggle knappen med v-if här kommer knappne att försvinna när man klickar på den -->
-            <div class="row align-items-center">
-                <!-- Loopar bild i bilder och lagt till ett key som kommer binda den första bilen med id i json -->
-                <!-- offer här binds till spa  Bör byta namn här :) -->
-                <BildDs v-for="spa in spas" :key="spa.id" :offer="spa" />
-                <!-- Ändra namn -->
-            </div>
+
+
+            <div class="row align-items-center"></div>
         </div>
     </div>
 </template>
@@ -40,11 +35,8 @@
         data() {
             return {
                 showSearch: false
-            }
-        },
-        methods: {
-            toggleVisibility() {
-                this.showSearch = !this.showSearch // Ny
+                /* Sätts denna till true kommer den gula -
+                Show searchbar inte visas och istället visa search */
             }
         }
     }

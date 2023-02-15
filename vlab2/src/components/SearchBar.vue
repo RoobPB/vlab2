@@ -5,9 +5,9 @@ import bild from '/Users/RobEr/vlab2/vlab2/public/bild.json'
 
 export default {
     props: {
-        showSearch: { // Ändra namn
-            type: Boolean, // Ändra namn
-            default: false // Ändra namn
+        showSearch: {
+            type: Boolean,
+            default: false
         }
 
     },
@@ -16,16 +16,14 @@ export default {
     return {
       bild,
       searchTerm: '',
-      filteredData: [],
-      filteredList: [],
-      msg: 'Sök på en årstid eller klicka på knappen', // Det är denna som skriver ut texten
+      fData: [],
+      msg: 'Sök på en årstid eller klicka på knappen',
     }
   },
   methods: {
     search() {
-      this.filteredData = this.bild.filter(item => {
-        return item.category.toLowerCase().includes(this.searchTerm.toLowerCase());  /*||
-               item.description.toLowerCase().includes(this.searchTerm.toLowerCase()); */
+      this.fData = this.bild.filter(item => {
+        return item.category.toLowerCase().includes(this.searchTerm.toLowerCase()); /* Små eller stora bokstäver spelar ingen roll  */
       })
     }
   }
@@ -42,9 +40,8 @@ export default {
 
 
 <div class="card-container">
-    <div class="card" v-for="item in filteredData" :key="item.id">
-        <img :src="item.image" alt="Bild bild"> <!-- Har försökt få bilden att visas när man går in på sidan (när bilden är en empty
-        string kommer alla bilder visas annars inte) -->
+    <div class="card" v-for="item in fData" :key="item.id">
+        <img :src="item.image" alt="Bild bild">
         <h2>{{ item.name }}</h2>
         <p>{{ item.description }}</p>
 
@@ -53,10 +50,8 @@ export default {
 
 </div>
 
-  <!-- Detta var ett test för att få ut texten <h1 class="SearchInfo" v-for="item in filteredData" :key="item.id">
-        {{ item.name }} {{ item.category }}</h1> -->
 
-<!--<h2>{{ msg || 'No props passed yet' }}</h2> -->
+
 </template>
 
 
@@ -82,7 +77,7 @@ export default {
 }
 
 h2 {
-    color: rgb(31, 136, 5); /* Färgen på bildnamn */
+    color: rgb(31, 136, 5);
 }
 .btn{
 position: relative;

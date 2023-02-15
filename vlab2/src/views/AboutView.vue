@@ -20,9 +20,9 @@
   <div id="sortering">
         <div class="container text-center">
             <div class="row align-items-center">
-                <!-- Loopar bild i bilder och lagt till ett key som kommer binda den första bilen med id i json -->
-                <!-- offer här binds till spa  Bör byta namn här :) -->
-                <BildDs v-for="spa in spas" :key="spa.id" :offer="spa" /> <!-- Ändra namn -->
+                <!-- Loopar loop i loops och lagt till ett key som kommer binda den första bilden med id i json -->
+
+                <BildDs v-for="loop in loops" :key="loop.id" :offer="loop" /> <!-- Loopar ut bilderna med axios -->
             </div>
         </div>
     </div>
@@ -32,8 +32,8 @@
 
         data() {
             return {
-            //    msg: 'Kategori',  Ta bort denna + classen title
-                spas: [], //Ändra namn
+
+                loops: [],
                 bildInfo: 'bild.json',
                 showSearch: false,
 
@@ -49,12 +49,12 @@
             async getBild() {
                 try {
                     const response = await axios.get(this.bildInfo)
-                    this.spas = (response.data)
+                    this.loops = (response.data)
                     console.log(response.data)
                 }
                 catch (error) {
                     console.log(error)
-                }
+                } /* Axios använd med try och catch */
             }
         }
     }
