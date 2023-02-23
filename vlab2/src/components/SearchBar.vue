@@ -1,6 +1,6 @@
 <script>
 
-import bild from '/Users/RobEr/vlab2/vlab2/public/bild.json'
+import bild from '/Users/RobEr/vlab2/vlab2/src/bild.json'
 
 
 export default {

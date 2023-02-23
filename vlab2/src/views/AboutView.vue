@@ -34,7 +34,7 @@
             return {
 
                 loops: [],
-                bildInfo: 'bild.json',
+                bildInfo: '/src/bild.json',
                 showSearch: false,
 
             }
